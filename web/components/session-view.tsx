@@ -93,7 +93,7 @@ function SessionView(props: SessionViewProps) {
 
   useEffect(() => {
     if (autoScroll && lastMessageRef.current) {
-      lastMessageRef.current.scrollIntoView({ behavior: "smooth" });
+      lastMessageRef.current.scrollIntoView({ behavior: "instant" });
     }
   }, [messages, autoScroll]);
 
