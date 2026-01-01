@@ -157,7 +157,7 @@ function SessionView(props: SessionViewProps) {
           <ScrollToBottomButton
             onClick={() => {
               setAutoScroll(true);
-              lastMessageRef.current?.scrollIntoView({ behavior: "smooth" });
+              lastMessageRef.current?.scrollIntoView({ behavior: "instant" });
             }}
           />
         )}
